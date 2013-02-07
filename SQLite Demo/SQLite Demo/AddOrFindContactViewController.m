@@ -40,7 +40,6 @@
     
     // Build the path to the database file
     
-  //  databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"contacts.sqlite"]];
     AppDelegate *del = (AppDelegate*)[[UIApplication sharedApplication]delegate];
 
     NSString* destPath = [del getDestPath];
@@ -75,59 +74,7 @@
         [self.findOrAddButton setTitle:@"Add" forState:UIControlStateNormal];
         [self.findOrAddButton addTarget:self action:@selector(saveData:) forControlEvents:UIControlEventTouchUpInside];
     }
-//    else{
-//        self.title = @"Find Contact";
-//        [self.findOrAddButton setTitle:@"Find" forState:UIControlStateNormal];
-//        [self.findOrAddButton addTarget:self action:@selector(findMe:) forControlEvents:UIControlEventTouchUpInside];
-//        self.addressLabel.frame = CGRectMake(15, 70, 290, 110);
-//        self.addressLabel.numberOfLines = 4;
-//        [self.addressLabel setFont:[UIFont systemFontOfSize:17]];
-//        self.addressTextField.hidden = YES;
-//        self.contactNoLabel.hidden = YES;
-//        self.contactNoTextField.hidden = YES;
-//        self.addressLabel.text = @"";
-//        self.nameLabel.text = @"Name:";
-//    }
 
-}
-
-- (IBAction)findContact:(id)sender {
-    
-//    AppDelegate *del = (AppDelegate*)[[UIApplication sharedApplication]delegate];
-//    
-//    NSString* destPath = [del getDestPath];
-//    const char *dbpath=[destPath UTF8String ];
-//    sqlite3_stmt    *statement;
-//    
-//    if (sqlite3_open(dbpath, &contactDB) == SQLITE_OK)
-//    {
-//        NSString *querySQL = [NSString stringWithFormat: @"SELECT address, phone FROM contacts WHERE name=\"%@\"", nameTextField.text];
-//        
-//        const char *query_stmt = [querySQL UTF8String];
-//        
-//        if (sqlite3_prepare_v2(contactDB, query_stmt, -1, &statement, NULL) == SQLITE_OK)
-//        {
-//            if (sqlite3_step(statement) == SQLITE_ROW)
-//            {
-//                NSString *addressField = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 0)];
-//                //address.text = addressField;
-//                
-//                NSString *phoneField = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 1)];
-//                //phone.text = phoneField;
-//                self.addressLabel.text = [NSString stringWithFormat:@"Address is %@ and Contact Number is %@", addressField, phoneField];
-//                statusLabel.text = @"Match found";
-//                
-//            } else {
-//                self.addressLabel.text = @"";
-//                statusLabel.text = @"Match not found";
-//                addressTextField.text = @"";
-//                contactNoTextField.text = @"";
-//            }
-//            sqlite3_finalize(statement);
-//        }
-//        sqlite3_close(contactDB);
-//    }
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -208,32 +155,7 @@
         }
         sqlite3_finalize(statement);
         sqlite3_close(contactDB);
-        
-//        const char *query="INSERT INTO CONTACTS (name, address, phone) VALUES(?,?,?)";
-//        
-//        if(sqlite3_prepare_v2(contactDB, query, -1, &statement, NULL)==SQLITE_OK)
-//        {
-//            NSString *name=nameTextField.text;
-//            NSString *address=addressTextField.text;
-//            NSString *phone=contactNoTextField.text;
-//
-//            NSLog(@"nameTextField--%@",nameTextField.text);
-//            NSLog(@"addressTextField--%@",addressTextField.text);
-//            NSLog(@"contactNoTextField--%@",contactNoTextField.text);
-//
-//            
-//            sqlite3_bind_text(statement, 1, [name UTF8String], -1, NULL);
-//            sqlite3_bind_text(statement, 2, [address UTF8String], -1, NULL);
-//            sqlite3_bind_text(statement, 3, [phone UTF8String], -1, NULL);
-//           
-//        }
-//        
-//        if(sqlite3_step(statement) != SQLITE_DONE ) {
-//            NSLog( @"Error: %s", sqlite3_errmsg(contactDB) );
-//        }
-//        sqlite3_finalize(statement);
-//        
-//        
+              
     }
 
 }

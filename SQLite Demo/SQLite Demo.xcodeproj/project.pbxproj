@@ -29,6 +29,8 @@
 		53DF165316C27E2C0043A3F0 /* contacts.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 53DF165216C27E2C0043A3F0 /* contacts.sqlite */; };
 		53DF165816C2915A0043A3F0 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DF165616C2915A0043A3F0 /* FindViewController.m */; };
 		53DF165916C2915A0043A3F0 /* FindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53DF165716C2915A0043A3F0 /* FindViewController.xib */; };
+		53E947C416C38DF300767726 /* DeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E947C216C38DF300767726 /* DeleteViewController.m */; };
+		53E947C516C38DF300767726 /* DeleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53E947C316C38DF300767726 /* DeleteViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,9 @@
 		53DF165516C2915A0043A3F0 /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
 		53DF165616C2915A0043A3F0 /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
 		53DF165716C2915A0043A3F0 /* FindViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindViewController.xib; sourceTree = "<group>"; };
+		53E947C116C38DF300767726 /* DeleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteViewController.h; sourceTree = "<group>"; };
+		53E947C216C38DF300767726 /* DeleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteViewController.m; sourceTree = "<group>"; };
+		53E947C316C38DF300767726 /* DeleteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +150,9 @@
 				53DF165516C2915A0043A3F0 /* FindViewController.h */,
 				53DF165616C2915A0043A3F0 /* FindViewController.m */,
 				53DF165716C2915A0043A3F0 /* FindViewController.xib */,
+				53E947C116C38DF300767726 /* DeleteViewController.h */,
+				53E947C216C38DF300767726 /* DeleteViewController.m */,
+				53E947C316C38DF300767726 /* DeleteViewController.xib */,
 				530D575316C1337A00751B1A /* Supporting Files */,
 			);
 			path = "SQLite Demo";
@@ -262,6 +270,7 @@
 				530D579016C1495B00751B1A /* AddOrFindContactViewController.xib in Resources */,
 				53DF165316C27E2C0043A3F0 /* contacts.sqlite in Resources */,
 				53DF165916C2915A0043A3F0 /* FindViewController.xib in Resources */,
+				53E947C516C38DF300767726 /* DeleteViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +310,7 @@
 				530D578616C1350900751B1A /* FirstViewController.m in Sources */,
 				530D578F16C1495A00751B1A /* AddOrFindContactViewController.m in Sources */,
 				53DF165816C2915A0043A3F0 /* FindViewController.m in Sources */,
+				53E947C416C38DF300767726 /* DeleteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

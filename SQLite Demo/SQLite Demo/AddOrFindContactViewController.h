@@ -26,7 +26,6 @@
 
 @property (nonatomic, assign) BOOL isAddContact;
 - (IBAction)saveData:(id)sender;
-- (IBAction)findContact:(id)sender;
 
 -(void)findMe:(id)sender;
 

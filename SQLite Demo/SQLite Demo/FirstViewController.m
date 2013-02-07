@@ -9,6 +9,8 @@
 #import "FirstViewController.h"
 #import "AddOrFindContactViewController.h"
 #import "FindViewController.h"
+#import "DeleteViewController.h"
+
 @interface FirstViewController ()
 
 @end
@@ -50,6 +52,14 @@
     FindViewController *findViewController = [[FindViewController alloc] init];
   //  findViewController.isAddContact = NO;
     [self.navigationController pushViewController:findViewController animated:YES];
+    
+}
+
+- (IBAction)onClickDeleteButton:(id)sender {
+    
+    DeleteViewController *deleteViewController = [[DeleteViewController alloc]init];
+    [self.navigationController pushViewController:deleteViewController animated:YES];
+
     
 }
 @end

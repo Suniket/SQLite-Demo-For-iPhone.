@@ -19,5 +19,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *addContactButton;
 - (IBAction)addContactButton:(id)sender;
 - (IBAction)onClickFindButton:(id)sender;
+- (IBAction)onClickDeleteButton:(id)sender;
 
 @end
